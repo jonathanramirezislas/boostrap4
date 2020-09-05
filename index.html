@@ -20,7 +20,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-           <a class="navbar-brand" href="#">Restaurant Jonas</a>
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
 
            <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
@@ -44,10 +44,13 @@
         <div class="container">
             <div class="row row-header"> 
                 <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
+                    <h1>Restaurant Jonas</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm">
+                    <div class="col-12 col-sm align-self-center">
+                        <img src="img/logo.png" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,8 +63,22 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                            src="img/uthappizza.png" alt="Uthappizza">
+                            <!-- Boostrap
+                                way to align media objects (like images or videos) together with content
+                                media-body:.media-body class. Add padding and margins as needed, with the spacing utilities
+                            -->
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza<span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
+                        <!--d-none d-sm-block will hide elements in extra small and small screens-->
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
+                            Italian pizza, topped with Cerignola olives, ripe vine
+                            cherry tomatoes, Vidalia onion, Guntur chillies and
+                            Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -108,7 +125,7 @@
 		              HONG KONG<br>
 		              Tel.: +852 1234 5678<br>
 		              Fax: +852 8765 4321<br>
-		              Email: <a href="mailto:jona@jona.net">confusion@food.net</a>
+		              Email: <a href="mailto:jona@jona.net">jona@jona.net</a>
 		           </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
