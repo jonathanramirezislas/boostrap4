@@ -107,6 +107,8 @@
     </header>
 
     <div class="container">
+
+
         <!-- Carousel-->
         <div id="mycarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
@@ -141,6 +143,10 @@
                 <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
+                <!--pause or play carousel-->
+                <button class="btn btn-danger btn-sm" id="carouselButton">
+                    <span id="carousel-button-icon" class="fa fa-pause"></span>
+                </button>
             </div>
         </div>
         </div>
@@ -313,7 +319,21 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script>
+       $("#carouselButton").click(function(){
+                //si el botton tiene la clase fa-pause
+                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                    $("#mycarousel").carousel('pause');//pausar eñl carrusel 
+                    $("#carouselButton").children("span").removeClass('fa-pause');//remove the class
+                    $("#carouselButton").children("span").addClass('fa-play');//add the class
+                }
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                    $("#mycarousel").carousel('cycle');
+                    $("#carouselButton").children("span").removeClass('fa-play');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
+                }
+            });
+    </script>
 </body>
 
 </html>
