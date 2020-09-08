@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run lite",
     "test": "https://github.com/jonathanramirezislas/boostrap4",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/"
   },
   "repository": {
     "type": "git",
