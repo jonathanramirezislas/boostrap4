@@ -38,7 +38,7 @@
                 </li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="loginButton">
                 <span class="fa fa-sign-in"></span> Login</a>
             </span>  
             </div>          
@@ -100,7 +100,7 @@
                         data-placement="bottom" the tooltip will appear beneath of bottom 
                     -->
                     <a  class="btn btn-block nav-link btn-warning"
-                    data-toggle="modal" data-target="#reservationModal">Reserve Table</a>
+                    id="reserveButton" >Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -333,6 +333,13 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+
+            $('#loginButton').click(function() {
+                 $('#loginModal').modal('show');
+              });
+         $('#reserveButton').click(function() {
+             $('#reservationModal').modal('show');
+          });
     </script>
 </body>
 

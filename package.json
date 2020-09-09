@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/jonathanramirezislas/boostrap4#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
